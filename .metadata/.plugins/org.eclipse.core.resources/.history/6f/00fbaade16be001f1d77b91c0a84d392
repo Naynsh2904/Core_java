@@ -1,0 +1,39 @@
+package Day_07;
+
+import java.util.Scanner;
+
+public class Homework_function {
+	public static void calculate() {
+		Scanner scnr =new Scanner(System.in);
+		int ar1 = scnr.nextInt();
+		int ar2 = scnr.nextInt();
+		int symbol = scnr.nextInt();
+		
+		if(symbol == 1) {
+			System.out.println(ar1 + "+" + ar2+ "=" + (ar1 + ar2));
+		} else if (symbol == 2) {
+			System.out.println(ar1 + "-" + ar2+ "=" + (ar1 - ar2));
+		}
+		
+//		switch (symbol) {
+//        case 1 :
+//        	System.out.println(ar1 + "+" + ar2+ "=" + (ar1 + ar2));
+//        	break;
+//        case 2 :
+//        	System.out.println(ar1 + "-" + ar2+ "=" + (ar1 - ar2));
+//        	break;	
+//        case 3 :
+//        	System.out.println(ar1 + "*" + ar2+ "=" + (ar1 * ar2));
+//        	break;
+//        case 4 :
+//        	System.out.println(ar1 + "/" + ar2+ "=" + (ar1 / ar2));
+//        	break;
+//        case 5 :
+//        	System.out.println(ar1 + "%" + ar2+ "=" + (ar1 % ar2));
+//        	break;	
+//        }
+	}
+	public static void main(String[] args) {
+		
+	}
+}

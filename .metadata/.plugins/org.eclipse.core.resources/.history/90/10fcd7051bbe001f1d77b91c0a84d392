@@ -1,0 +1,76 @@
+package Day_07;
+
+import java.util.Scanner;
+
+public class Homework_function {
+//	1. Write a program to calculate Addition, Substraction, Multiplication, Division of two numbers in the same program using functions.
+	public static void calculate() {
+		Scanner scnr =new Scanner(System.in);
+        System.out.print("enter no 1: ");
+		int ar1 = scnr.nextInt();
+        System.out.print("enter no 2: ");
+        int ar2 = scnr.nextInt();
+        System.out.print("enter No for the given condition addition for(1), substraction for(2), multiplication for(3), division for (4) ");
+        int symbol = scnr.nextInt();
+		
+		if(symbol == 1) {
+			System.out.println(ar1 + "+" + ar2+ "=" + (ar1 + ar2));
+		} else if (symbol == 2) {
+			System.out.println(ar1 + "-" + ar2+ "=" + (ar1 - ar2));
+		}else if (symbol == 3) {
+			System.out.println(ar1 + "*" + ar2+ "=" + (ar1 * ar2));
+		}else if (symbol == 4) {
+			System.out.println(ar1 + "/" + ar2+ "=" + (ar1 / ar2));
+		}else{
+			System.out.println("Enter valid Inputs");
+		}
+	}
+	
+//	2. Write a program to print the gross salary of the employee depending upon his basic salary using elseif and function.
+		public static double GrossSalary() {
+			Scanner scnr = new Scanner(System.in);
+			System.out.print("Enter your basic salary: ");
+			int basic = scnr.nextInt();
+			
+			double gross;
+			
+		    if (basic > 100000) {
+	            gross = basic + (basic * 0.50);
+	        } else if (basic > 85000) {
+	            gross = basic + (basic * 0.40);
+	        } else if (basic > 70000) {
+	            gross = basic + (basic * 0.30);
+	        } else if (basic > 50000) {
+	            gross = basic + (basic * 0.20);
+	        } else if (basic > 40000) {
+	            gross = basic + (basic * 0.15);
+	        } else if (basic > 30000) {
+	            gross = basic + (basic * 0.10);
+	        } else {
+	            gross = basic;
+	        }
+		    return gross;
+		}
+	public static void main(String[] args) {
+//		1. Write a program to calculate Addition, Substraction, Multiplication, Division of two numbers in the same program using functions.
+		calculate();
+		System.out.println();
+		System.out.println();
+		
+//		2. Write a program to print the gross salary of the employee depending upon his basic salary using elseif and function.
+		System.out.println("Your gross salary is "+ GrossSalary());
+		System.out.println();
+		
+//		3. Write a program to calculate area of triangle using function.
+		public static float AreaofTriangle() {
+			
+			System.out.print("Enter Base of Triangle: ");
+        	float base = scnr.nextFloat();
+        	System.out.print("Enter height of Triangle: ");
+        	float Height = scnr.nextFloat();
+        	System.out.println("Circumference of circle is "+ (0.5 * base * Height));
+        	break;
+		}
+		
+	}
+}
