@@ -1,0 +1,23 @@
+package Test;
+
+public class First_test {
+	public static void main(String[] args) {
+//		largest in four integer
+		int a=10;
+		int b=20;
+		int c=30;
+		int d=51;
+		
+		if(a>b && a>c && a>d) {
+			System.out.println(a + " is Greater");
+		} else if(b>a && b>c && b>d) {
+			System.out.println(b + " is Greater");
+		} else if(c>b && c>b && c>d) {
+			System.out.println(c + " is Greater");
+		} else if(d>b && d>c && d>a) {
+			System.out.println(d + " is Greater");
+		} else {
+			System.out.println("All no=umber are same");
+		}
+	}
+}

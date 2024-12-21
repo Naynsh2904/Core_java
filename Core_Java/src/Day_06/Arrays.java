@@ -132,19 +132,25 @@ public class Arrays {
         for(int i=0; i<arr9.length; i++) {
           if(arr9[i] % 2 == 0){
             even[i]= arr9[i];
+            
           }
           if(arr9[i] % 2 != 0){
-            even[i]= arr9[i];
+            odd[i]= arr9[i];
           }
         }
+        
         System.out.print("even number is ");
         for(int i=0; i<arr9.length; i++) {
-        	System.out.print(even[i]);
+        	if(even[i] != 0) {
+        		System.out.print(even[i]+" ");
+        	}
         }
         System.out.println();
         System.out.print("odd number is ");
         for(int i=0; i<arr9.length; i++) {
-            System.out.print(odd[i]);
+        	if(odd[i] != 0) {
+    		System.out.print(odd[i]+" ");
+    	}
         }
 	    
 	    
