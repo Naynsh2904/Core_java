@@ -1,0 +1,57 @@
+package Day_06;
+
+public class Arrays {
+	public static void main(String[] args) {
+//		1. Write a program for addition of single array elements.
+		int arr1[] = new int[3];
+		arr1[0] = 5;
+		arr1[1] = 5;
+		arr1[2] = 5;
+		
+		int sum = 0;
+		
+		for(int i=0; i<arr1.length; i++) {
+			sum += arr1[i];
+		}
+		
+		System.out.println("addition of aaray of element is "+ sum);
+		System.out.println();
+		
+//		2. Write a program for addition of two arrays stored in third array.
+		int arr2[] = {10,20,30,40,50};
+		int arr3[] = {10,20,30,40,50};
+		int sumoftwoarr[]= new int[arr2.length];
+		
+		for(int i=0; i<5; i++) {
+			sumoftwoarr[i]= arr2[i] + arr3[i];
+			System.out.print(sumoftwoarr[i]+ " ,");
+		}
+		System.out.println();
+		System.out.println();
+		
+//		3. Write a program to search a particular element in array and display its position.
+		int arr4[] = {10,20,30,40,50};
+		int key = 40;
+		
+		for(int i=0;i<arr4.length; i++ ) {
+			if(arr4[i] == key) {
+				System.out.println("position of "+ key + " is "+ (i+1));
+			}
+		}
+		System.out.println();
+		
+//		4. Write a program to store squares and cubes of the elements in another arrays and Display all the three arrays.
+		int arr5[] = {10,20,30,40,50};
+		int square[] = new int[arr5.length];
+		int cube[] = new int[arr5.length];
+		
+		for(int i=0; i<arr1.length; i++) {
+			square[i] =arr5[i]*arr5[i];
+			cube[i] =arr5[i]*arr5[i]*arr5[i];
+		}
+		for(int i=0; i<arr1.length; i++) {
+			System.out.println("Square of "+arr5[i] + " is "+ square[i]);
+			System.out.println("cube of "+arr5[i] + " is "+ cube[i]);
+		}
+	}
+}
