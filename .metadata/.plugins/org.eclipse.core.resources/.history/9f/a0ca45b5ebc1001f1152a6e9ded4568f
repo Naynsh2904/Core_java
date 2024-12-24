@@ -1,0 +1,23 @@
+package Day_11;
+
+//	1. Write a program to print your name using default constructor.
+class Name{
+	Name(){
+		System.out.println("Nayan");
+	}
+}
+
+//	2. Write a program to print average of marks of two subjects of a student using parameterized constructor.
+class Avg {
+	Avg(int a, int b, int c){
+		float avg = (a+b+c)/3;
+		System.out.println("average is " + avg);
+	}
+}
+
+public class ClassWork {
+	public static void main(String[] args) {
+		Name n = new Name();
+		Avg a = new Avg(85,74,96);
+	}
+}
