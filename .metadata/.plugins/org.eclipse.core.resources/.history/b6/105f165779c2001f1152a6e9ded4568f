@@ -1,0 +1,18 @@
+package Day_11;
+
+public class homework {
+	public static void main(String[] args) {
+		Book b = new Book(10 , 20);
+		Book c = new Book(10 , 20, 30);
+	}
+}
+
+class Book {
+	Book(int a, int b){
+		System.out.println(a +b);
+	}
+	
+	Book(int a, int b, int c){
+		System.out.println(a+b+c);
+	}
+}

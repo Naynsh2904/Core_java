@@ -1,0 +1,74 @@
+package Day_11;
+
+public class homework {
+	public static void main(String[] args) {
+//	1. Write a program to show constructor overloading. (Take your own example)
+		Book b = new Book(10 , 20);
+		Book c = new Book(10 , 20, 30);
+		
+//		2. Write a Java program to create a class called BankAccount with private instance variables accountNumber and balance. Provide public getter and setter methods to access and modify these variables.
+		BankAccount a = new BankAccount();
+		a.setAccountNo(123456789);
+		System.out.println("Account number is "+a.getAccountNo());
+		a.setBalance(15000);
+		System.out.println("Balance is "+ a.getBalance());
+		
+//		3. Write a Java program to create a class called Rectangle with private instance variables length and width. Provide public getter and setter methods to access and modify these variables.
+		Rectanglee r = new Rectanglee();
+		r.setLen(10);
+		r.setWidth(20);
+		System.out.println("Length of Rectangle is "+r.getLen());
+		System.out.println("width of Rectangle is "+r.getWidth());
+	}
+}
+
+//	1. Write a program to show constructor overloading. (Take your own example)
+class Book {
+	Book(int a, int b){
+		System.out.println(a +b);
+	}
+	
+	Book(int a, int b, int c){
+		System.out.println(a+b+c);
+	}
+}
+
+//	2. Write a Java program to create a class called BankAccount with private instance variables accountNumber and balance. Provide public getter and setter methods to access and modify these variables.
+class BankAccount {
+	private int accountNo ;
+	private int balance ;
+	
+	public int getAccountNo () {
+		return accountNo;
+	}
+	public void setAccountNo (int accountNo) {
+		this.accountNo =accountNo;
+	}
+	
+	public int getBalance() {
+		return balance;
+	}
+	public void setBalance (int balance) {
+		this.balance=balance;
+	}
+}
+
+//	3. Write a Java program to create a class called Rectangle with private instance variables length and width. Provide public getter and setter methods to access and modify these variables.
+class Rectanglee {
+	private int len;
+	private int width;
+	
+	public int getLen() {
+		return len;
+	}
+	public void setLen(int len) {
+		this.len=len;
+	}
+	
+	public int getWidth () {
+		return width;
+	}
+	public void setWidth(int width) {
+		this.width=width;
+	}
+}
