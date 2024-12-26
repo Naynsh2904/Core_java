@@ -1,0 +1,27 @@
+package Day_12;
+
+public class classwork_Inheritence {
+	public static void main(String[] args) {
+		Dog d = new Dog();
+		d.eat();
+	}
+}
+
+//	1. Write a program to demonstrate Multilevel Inheritance. (Take example by your own).
+class Animal {
+	public void eat() {
+		System.out.println("eating");
+	}
+}
+
+class Mammal extends Animal {
+	public void leg() {
+		System.out.println("Legsss");
+	}
+}
+
+class Dog extends Mammal{
+	public void dogg() {
+		System.out.println("Dog");
+	}
+}

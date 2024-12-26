@@ -1,0 +1,109 @@
+package Day_12;
+
+public class classwork_Inheritence {
+	public static void main(String[] args) {
+//		1. Write a program to demonstrate Multilevel Inheritance. (Take example by your own).
+		Dog d = new Dog();
+		d.eat();
+		
+//		2. Create a class bank. Create two methods credit() and debit() in it respectively. Create two classes Credit and Debit which extends the Bank class and call the two methods respectively in both the classes.
+		Credit cr = new Credit();
+		cr.credit();
+		Debit dr =new Debit();
+		dr.debit();
+		
+//		3. Create a class GrandParent. Create a class Parent which extends it. Again Create a class Child which extends Parent. Create different methods in the classes and call them using object of child class.
+		Child ch = new Child();
+		ch.child();
+		ch.parent();
+		ch.grandParent();
+		
+//		4. Write a program to demonstrate single level inheritance. (Take example by your own)
+		B a = new B();
+		a.parent_A();
+		a.child_B();
+	}
+}
+
+//	1. Write a program to demonstrate Multilevel Inheritance. (Take example by your own).
+class Animal {
+	public void eat() {
+		System.out.println("eating");
+	}
+}
+
+class Mammal extends Animal {
+	public void leg() {
+		System.out.println("Legsss");
+	}
+}
+
+class Dog extends Mammal{
+	public void dogg() {
+		System.out.println("Dog");
+	}
+}
+
+//	2. Create a class bank. Create two methods credit() and debit() in it respectively. Create two classes Credit and Debit which extends the Bank class and call the two methods respectively in both the classes.
+class Bank {
+	public void credit() {
+		System.out.println("Dear UPI user A/C X6909 Credited by 500.0 on date 26Dec24");
+	}
+	public void debit() {
+		System.out.println("Dear UPI user A/C X6909 debited by 15.0 on date 26Dec24");
+	}
+}
+
+class Credit extends Bank{
+	
+}
+
+class Debit extends Bank{
+	
+}
+
+//	3. Create a class GrandParent. Create a class Parent which extends it. Again Create a class Child which extends Parent. Create different methods in the classes and call them using object of child class.
+class GrandParent {
+	public void grandParent() {
+		System.out.println("From GrandParent");
+	}
+}
+
+class Parent extends GrandParent {
+	public void parent () {
+		System.out.println("from Parent");
+	}
+}
+
+class Child extends Parent {
+	public void child() {
+		System.out.println("From Child");
+	}
+}
+
+//	4. Write a program to demonstrate single level inheritance. (Take example by your own)
+class A {
+	public void parent_A() {
+		System.out.println("From Single levevel inhertence Parent A");
+	}
+}
+
+class B extends A {
+	public void child_B() {
+		System.out.println("From single level inheritence Child B");
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
