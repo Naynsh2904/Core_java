@@ -1,0 +1,26 @@
+package Day_17;
+
+public class Final_Keyword {
+
+	public static void main(String[] args) {
+		final int i = 10;
+//		i += 80;
+		System.out.println(i);
+		
+		One t = new One();
+		t.a1();
+	}
+}
+
+
+class One extends Two {
+	void a1() {
+		System.out.println("A1");
+	}
+}
+
+final class Two {
+	final void a1 () {
+		System.out.println("A2");
+	}
+}
