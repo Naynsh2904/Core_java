@@ -1,0 +1,26 @@
+package Day_13;
+
+import java.util.Scanner;
+
+public class Homework_Static {
+	public static void grosssalary(){	
+		Scanner sobj = new Scanner(System.in);
+		System.out.println("Enter the salary :  ");
+		float salary = sobj.nextInt();
+		
+		float bonas = salary * (float)0.4;
+		
+		float grosssalary = salary + bonas;
+		
+		System.out.println("gross salary : "+grosssalary);
+	}
+	public static void main(String[] args) {
+		
+//		1. Write a program to find the gross salary of an employee by adding 40% to the basic salary. Use static method. (Take input from user)
+		Homework_Static.grosssalary();
+//		2. Write a program to calculate the total area of square by using static variables and static block. (Take input from user).
+		
+//		3. Write a program to take name and age from the user and print them using the method of static class.
+		
+	}
+}
