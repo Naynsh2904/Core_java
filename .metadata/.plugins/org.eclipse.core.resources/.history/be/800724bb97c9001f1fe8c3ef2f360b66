@@ -1,0 +1,28 @@
+package Day_16;
+
+public class ClassWork {
+	public static void main(String[] args) {
+//		1. Write a Java program to find length of a string.
+		String name = "Namaste World!!!";
+		System.out.println(name.length());
+		System.out.println();
+		
+//		2. Write a Java program to concatenate two strings
+		String name2 = "@@@@@@@@@";
+		System.out.println(name +" "+ name2);
+		System.out.println();
+		
+//		3. Write a Java program to convert lowercase string to uppercase.
+		System.out.println(name.toLowerCase());
+		System.out.println(name.toUpperCase());
+		System.out.println();
+		
+//		4. WAP to split string into 2 tokens where string is “HELLO$WORLD"
+		String split = "HELLO$WORLD";
+		String [] tokens = split.split("\\");
+		
+		System.out.println("First Token: " + tokens[0]);
+		System.out.println("Second Token: " + tokens[1]);
+		
+	}
+}
