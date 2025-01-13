@@ -1,0 +1,38 @@
+package Day_21;
+
+public class Threaaad extends Thread {
+
+	public static void main(String[] args) {
+		One o =new One();
+		tne t =new tne();
+		o.start();
+		t.start();
+	}
+
+}
+
+class One extends Thread {
+	public void run () {
+		for(int i=1 ; i< 5; i++) {
+			try {
+				Thread.sleep(1000);
+				System.out.println("----");
+			} catch ( Exception e) {
+				System.out.println(e.getMessage());
+			}
+		}
+	}
+}
+
+class tne extends One {
+	public void run () {
+		for(int i=1 ; i< 5; i++) {
+			try {
+				Thread.sleep(500);
+				System.out.println("****");
+			} catch ( Exception e) {
+				System.out.println(e.getMessage());
+			}
+		}
+	}
+}

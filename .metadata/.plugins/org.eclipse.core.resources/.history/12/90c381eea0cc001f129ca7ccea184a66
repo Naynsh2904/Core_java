@@ -1,0 +1,38 @@
+package Day_19;
+
+import java.util.Scanner;
+
+class DivideByZeroException extends Exception {
+    public DivideByZeroException(String message) {
+        super(message);
+    }
+}
+
+class Calculator {
+    public static int divide(int numerator, int denominator) throws DivideByZeroException {
+        if (denominator == 0) {
+            throw new DivideByZeroException("Division by zero is not allowed.");
+        }
+        return numerator / denominator;
+    }
+}
+
+public class Classwork_Exception {
+	public static void main(String[] args) {
+//		1. Create a custom exception for student admission where, a student won't be able to take admission if he is less than 3 years old.
+//		Scanner scnr = new Scanner(System.in);
+//		String name = scnr.next();
+//		int age = scnr.nextInt();
+//		
+//		if (age < 3) {
+//			
+//		}
+		
+		 try {
+	            int result = Calculator.divide(10, 0);
+	            System.out.println("Result: " + result);
+	        } catch (DivideByZeroException e) {
+	            System.out.println("Calculation Error: " + e.getMessage());
+	        }
+	}
+}

@@ -1,9 +1,0 @@
-package Day_17;
-
-public class Classwork_Final_Keyword {
-	public static void main(String[] args) {
-//		1. Write a program to demonstrate the use of a final variable. (Take your own example)
-		final int a = 50;
-		System.out.println(a);
-	}
-}

@@ -1,0 +1,21 @@
+package Day_21;
+
+public class Threaaad extends Thread {
+
+	public static void main(String[] args) {
+		One o =new One();
+		o.method();
+
+	}
+
+}
+
+class One extends Thread {
+	public void method () {
+		try {
+			Thread.sleep(500);
+		} catch ( Exception e) {
+			System.out.println(e.getMessage());
+		}
+	}
+}

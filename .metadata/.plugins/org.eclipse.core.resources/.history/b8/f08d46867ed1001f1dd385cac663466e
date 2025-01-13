@@ -1,0 +1,26 @@
+package Day_19;
+
+import java.util.Scanner;
+
+class AdmissionException extends Exception {
+ public AdmissionException(String message) {
+     super(message);
+ }
+}
+
+public class Classwork_Exception {
+	public static void main(String[] args) {
+		Scanner scnr = new Scanner(System.in);
+		int age = scnr.nextInt();
+		
+		try {
+			if (age < 3) {
+				throw new AdmissionException("Age is more then 3 is required");
+			}
+		} catch ( Exception e) {
+			System.out.println(e.getMessage());
+		}
+		System.out.println("Admission Completed!!!");
+	}
+}
+

@@ -1,8 +1,7 @@
-PHPReadOccurrenceIndicationColor=7,54,66
-PHPWriteOccurrenceIndicationColor=7,54,66
+AbstractTextEditor.Color.Background.SystemDefault=false
+AbstractTextEditor.Color.Foreground.SystemDefault=false
+AbstractTextEditor.Color.SelectionBackground.SystemDefault=false
+AbstractTextEditor.Color.SelectionForeground.SystemDefault=false
 comment_stylePreferences=NONE
 comment_text=false
 eclipse.preferences.version=1
-javaScriptOccurrenceIndicationColor=7,54,66
-org.eclipse.cdt.ui.occurrenceIndicationColor=7,54,66
-pydevOccurrenceIndicationColor=7,54,66

@@ -1,0 +1,32 @@
+package Day_19;
+
+import java.util.Scanner;
+
+//Custom exception class
+class AdmissionException extends Exception {
+ public AdmissionException(String message) {
+     super(message);
+ }
+}
+
+//Student admission class
+public class Classwork_Exception {
+ public static void admitStudent(int age) throws AdmissionException {
+     if (age < 3) {
+         throw new AdmissionException("Student is too young for admission. Minimum age is 3 years.");
+     } else {
+         System.out.println("Student admitted successfully.");
+     }
+ }
+
+ public static void main(String[] args) {
+	 Scanner sc = new Scanner(System.in);
+	 int n = sc.nextInt();
+     try {
+         admitStudent(n); // Change the age to test
+     } catch (AdmissionException e) {
+         System.out.println(e.getMessage());
+     }
+ }
+}
+

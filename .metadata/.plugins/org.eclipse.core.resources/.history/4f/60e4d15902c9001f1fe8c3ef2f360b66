@@ -1,7 +1,0 @@
-package Day_17;
-
-public abstract class Abstraction_Problem {
-	void mains() {
-		
-	}
-}

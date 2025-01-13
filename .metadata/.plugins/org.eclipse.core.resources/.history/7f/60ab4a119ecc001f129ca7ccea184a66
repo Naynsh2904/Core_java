@@ -1,0 +1,49 @@
+package Day_19;
+
+//class AgeRestrictionException extends Exception {
+//    public AgeRestrictionException(String message) {
+//        super(message);
+//    }
+//}
+
+
+//Student Class
+		class Student {
+		    private String name;
+		    private int age;
+
+		    public Student(String name, int age) throws AgeRestrictionException {
+		        if (age < 3) {
+		            throw new AgeRestrictionException("Student age must be at least 3 years for admission.");
+		        }
+		        this.name = name;
+		        this.age = age;
+		    }
+
+		    public String getName() {
+		        return name;
+		    }
+
+		    public int getAge() {
+		        return age;
+		    }
+		}
+public class Classwork_Exception {
+		    public static void main(String[] args) {
+		        try {
+		            Student student1 = new Student("John Doe", 2);
+		            System.out.println("Student " + student1.getName() + " admitted successfully.");
+		        } catch (AgeRestrictionException e) {
+		            System.out.println("Admission Error: " + e.getMessage());
+		        }
+
+		        try {
+		            Student student2 = new Student("Jane Smith", 5);
+		            System.out.println("Student " + student2.getName() + " admitted successfully.");
+		        } catch (AgeRestrictionException e) {
+		            System.out.println("Admission Error: " + e.getMessage());
+		        }
+		    }
+
+	}
+
