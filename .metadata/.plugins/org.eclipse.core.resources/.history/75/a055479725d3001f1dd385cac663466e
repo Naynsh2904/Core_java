@@ -1,0 +1,25 @@
+package Day_24;
+
+import java.util.ArrayList;
+
+public class ArrrayListt {
+
+	public static void main(String[] args) {
+		ArrayList<String> n = new ArrayList<>();
+		
+		n.add("Nayan");
+		n.add("Shivankar");
+		n.set(1, "NayaN");
+		n.set(1, "ShivankaR");
+		System.out.println(n);
+		
+		n.remove(1);
+		System.out.println(n);
+		
+		n.clear();
+		
+		System.out.println(n);
+
+	}
+
+}

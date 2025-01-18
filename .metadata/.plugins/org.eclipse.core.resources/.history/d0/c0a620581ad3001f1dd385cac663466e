@@ -1,0 +1,39 @@
+package Day_21;
+
+public class Practice extends Thread  {
+   public static void main(String[] args) throws Exception {
+	   
+	
+		  A a = new A();
+		   B b = new B();
+		   
+		   Thread t = new Thread(a);
+		   Thread t1 = new Thread(b);
+		   t.start();
+		   t1.start();
+	 
+	   
+   }
+}
+ class A implements Runnable  {
+	   public void run() throws  Exception   {
+		   for(int i=0; i<=5 ; i++ )
+		   {
+			   System.out.println("One 1 : "+i);
+					Thread.sleep(500);
+		  }
+	   }
+}
+ class B implements Runnable {
+	   public void run() {
+		   for(int i=0; i<=5 ; i++ )
+		   {
+			   System.out.println("Two 2"+i);
+			   try {
+				Thread.sleep(0);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		   }
+	   }
+}
